@@ -1,0 +1,149 @@
+@media only screen and (max-width: 815px) {
+  body {
+    text-align: justify;
+    text-justify: inter-word; 
+  }
+
+  #navbar {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    padding: 0;
+    padding-bottom: 10px !important;
+    margin: 0;
+    width: 100%;
+    max-height: 300px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+    overflow-y: hidden !important;
+  }
+
+  #navbar div {
+/*     border: 1px solid; */
+    border-radius: 22px !important;
+    background: linear-gradient(145deg, #cf333f, #f63d4b) !important;
+    box-shadow:  21px 21px 41px #bd2f39,
+             -21px -21px 41px #ff4353 !important;
+    height: 210px !important;
+    margin: 20px;
+  }
+  
+  #navbar a {
+    border: none !important;
+  }
+
+  #main-doc {
+    position: relative;
+    margin: 330px auto 0 !important;  
+    padding: 0 !important;
+    width: 80%;
+  }
+
+  code {
+    padding: 0 !important;
+    background-color: #F1FAEE !important;
+    border-radius: 0 !important;
+    box-shadow:  none !important;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  font-display: swap;
+  src: url(./RobotoMono-VariableFont_wght.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #A8DADC;
+  font-family: 'Roboto Mono', monospace;
+}
+
+#navbar {
+  border-right: 3px solid rgba(0, 22, 22, 0.4);
+  height: 100%;
+  position: fixed;
+  top: 0;
+  overflow-y: auto;
+  background-color: #E63946;
+  color: white;
+}
+
+#navbar header h1{
+  text-align: center;
+  margin: 17px 0;
+}
+
+#navbar div {
+  overflow-y: auto;
+}
+
+#navbar a {
+  display: block;
+  border-top: 1px solid rgba(0, 22, 22, 0.4);
+  font-size: 14px;
+  text-decoration: none;
+  padding: 11px 30px;
+  color: #F1FAEE;
+}
+
+#navbar a:hover {
+  background-color: #F1FAEE;
+  color: black;
+}
+
+#main-doc {
+  max-width: (75%, 75%);
+  margin-left: 365px;
+  padding: 10px 50px 0 0;
+  
+}
+
+#main-doc header h1 {
+  font-size: 23px;
+}
+
+#main-doc p, #main-doc li {
+  font-size: 13px;
+}
+
+.sub-topic-heading {
+  font-size: 18px;
+}
+
+code {
+  display: block;
+  border-radius: 19px;
+  border-radius: 15px;
+  background: #A8DADC;
+  box-shadow:  10px 10px 20px #88b1b2,
+             -10px -10px 20px #c8ffff;
+  padding: 15px;
+  margin-bottom: 30px;
+  font-size: min(2vw, 12px);
+  overflow: hidden;
+}
+
+.sub-topic {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+
+pre {
+  padding: 0;
+  margin: 0;
+}
+
