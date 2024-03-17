@@ -7,27 +7,37 @@
     <title>HTML Documentation</title>
     <link rel="icon" type="image/x-icon" href="./html-icon.ico">
   </head>
-  <body>
-    <nav id="navbar">
-      <header><h1>HTML</h1></header>
-      <div class="a-list">
-        <a href="#Introduction" class="nav-link sub-topic">Introduction</a>
-        <a href="#Purpose" class="nav-link">Purpose</a>
-        <a href="#Prerequisites" class="nav-link">Prerequisites</a>
-        <a href="#HTML_Basics" class="nav-link sub-topic">HTML Basics</a>
-        <a href="#Structure_of_an_HTML_Document" class="nav-link">Structure of an HTML Document</a>
-        <a href="#HTML_Tags_and_Elements" class="nav-link">HTML Tags and Elements</a>
-        <a href="#Text_Formatting" class="nav-link">Text Formatting</a>
-        <a href="#Lists_and_Tables" class="nav-link">Lists and Tables</a>
-        <a href="#Forms_and_Input_Elements" class="nav-link"> Forms and Input Elements</a>
-        <a href="#Advanced_HTML" class="nav-link sub-topic">Advanced HTML</a>
-        <a href="#Multimedia_Elements" class="nav-link">Multimedia Elements</a>
-        <a href="#Semantic_HTML" class="nav-link">Semantic HTML</a>
-        <a href="#HTML5_Features" class="nav-link">HTML5 Features</a>
-        <a href="#Accessibility_Best_Practices" class="nav-link">Accessibility Best Practices</a>
-        <a href="#Reference" class="nav-link sub-topic">Reference</a>
-      </div>
-    </nav>
+  <body style="width: 100%;">
+
+    <!-- <div class="sample" style="display: flex; align-items: center; height: 32px; position: relative;"> -->
+      
+    </div>
+    
+    <header class="header">
+    <h1 class="only-in-mobile-heading">HTML Documentation</h1>
+      <input type="checkbox" class="toggle-menu">
+      <div class="hamburger"></div>
+      <nav id="navbar">
+        <h1>HTML</h1>
+        <div class="a-div">
+          <a href="#Introduction" class="nav-link sub-topic">Introduction</a>
+          <a href="#Purpose" class="nav-link sub-sub-topic">Purpose</a>
+          <a href="#Prerequisites" class="nav-link sub-sub-topic">Prerequisites</a>
+          <a href="#HTML_Basics" class="nav-link sub-topic">HTML Basics</a>
+          <a href="#Structure_of_an_HTML_Document" class="nav-link sub-sub-topic">Structure of an HTML Document</a>
+          <a href="#HTML_Tags_and_Elements" class="nav-link sub-sub-topic">HTML Tags and Elements</a>
+          <a href="#Text_Formatting" class="nav-link sub-sub-topic">Text Formatting</a>
+          <a href="#Lists_and_Tables" class="nav-link sub-sub-topic">Lists and Tables</a>
+          <a href="#Forms_and_Input_Elements" class="nav-link sub-sub-topic"> Forms and Input Elements</a>
+          <a href="#Advanced_HTML" class="nav-link sub-topic">Advanced HTML</a>
+          <a href="#Multimedia_Elements" class="nav-link sub-sub-topic">Multimedia Elements</a>
+          <a href="#Semantic_HTML" class="nav-link sub-sub-topic">Semantic HTML</a>
+          <a href="#HTML5_Features" class="nav-link sub-sub-topic">HTML5 Features</a>
+          <a href="#Accessibility_Best_Practices" class="nav-link sub-sub-topic">Accessibility Best Practices</a>
+          <a href="#Reference" class="nav-link sub-topic">Reference</a>
+        </div>
+      </nav>
+    </header>
 
     <main id="main-doc">
       <section class="main-section" id="Introduction">
@@ -52,16 +62,16 @@
   &lt;body>
     &lt!-- Content goes here -- >
   &lt;/body>
-&lt;/html></code></pre>
+&lt;/html><span></span></code></pre>
         <h3 id="HTML_Tags_and_Elements" class="sub-topic-heading">HTML Tags and Elements</h3>
         <p>HTML relies on tags and elements to structure content. From simple paragraph tags &lt;p> to headings &lt;h1> through &lt;h6>, links &lt;a>, and image tags &lt;img>, each element serves a specific purpose. Mastery of these foundational elements is crucial for creating compelling and well-structured web pages.</p>
         <pre><code>&lt;p>This is a paragraph.&lt;/p>
 &lt;h1>This is a heading level 1&lt;/h1>
 &lt;a href="https://www.example.com">Visit Example&lt;/a>
-&lt;img src="image.jpg" alt="Description"></code></pre>
+&lt;img src="image.jpg" alt="Description"><span></span></code></pre>
         <h3 id="Text_Formatting" class="sub-topic-heading">Text Formatting</h3>
         <p>Text formatting is an art within HTML. Emphasize text with &lt;strong>, italicize with &lt;em>, underline with &lt;u>, and format code with &lt;code>. These formatting tags add depth and clarity to your textual content.</p>
-        <pre><code>&lt;p>&lt;strong>Bold text&lt;/strong> and &lt;em>italicized text&lt;/em>.&lt;/p></code></pre>
+        <pre><code>&lt;p>&lt;strong>Bold text&lt;/strong> and &lt;em>italicized text&lt;/em>.&lt;/p><span></span></code></pre>
         <h3 id="Lists_and_Tables" class="sub-topic-heading">Lists and Tables</h3>
         <p>Structuring information is pivotal for effective communication. HTML provides tools such as lists (&lt;ul>, &lt;ol>, &lt;dl>) and tables (&lt;table>, &lt;tr>, &lt;td>) to organize and present data. Mastering these elements contributes to creating clean, organized, and readable content.</p>
         <pre><code>&lt;ul>
@@ -74,16 +84,14 @@
         &lt;td>Row 1, Column 1&lt;/td>
         &lt;td>Row 1, Column 2&lt;/td>
     &lt;/tr>
-&lt;/table></code></pre>
+&lt;/table><span></span></code></pre>
         <h3 id="Forms_and_Input_Elements" class="sub-topic-heading">Forms and Input Elements</h3>
-        <p>Interactivity is the essence of many modern web applications, and HTML forms facilitate this. The &lt;form> element, along with &lt;input>, &lt;select>, and &lt;textarea>, empowers you to create dynamic and user-friendly experiences, collecting and processing user input seamlessly.
-
-</p>
+        <p>Interactivity is the essence of many modern web applications, and HTML forms facilitate this. The &lt;form> element, along with &lt;input>, &lt;select>, and &lt;textarea>, empowers you to create dynamic and user-friendly experiences, collecting and processing user input seamlessly.</p>
         <pre><code>&lt;form action="/submit" method="post">
     &lt;label for="username">Username:&lt;/label>
     &lt;input type="text" id="username" name="username" required>
     &lt;input type="submit" value="Submit">
-&lt;/form></code></pre>
+&lt;/form><span></span></code></pre>
       </section>
 
       <section class="main-section" id="Advanced_HTML">
@@ -98,7 +106,7 @@
 &lt;video controls width="400">
     &lt;source src="video.mp4" type="video/mp4">
     Your browser does not support the video element.
-&lt;/video>
+&lt;/video><span></span>
 </code></pre>
         <h3 id="Semantic_HTML" class="sub-topic-heading">Semantic HTML</h3>
         <p>Understanding the semantics of HTML is crucial for accessibility and search engine optimization. Semantic tags like &lt;article>, &lt;section>, and &lt;nav> provide meaning to your document structure, enhancing both user experience and search engine understanding.</p>
@@ -112,7 +120,7 @@
         &lt;li>&lt;a href="#home">Home&lt;/a>&lt;/li>
         &lt;li>&lt;a href="#about">About&lt;/a>&lt;/li>
     &lt;/ul>
-&lt;/nav>
+&lt;/nav><span></span>
 </code></pre>
         <h3 id="HTML5_Features" class="sub-topic-heading">HTML5 Features</h3>
         <p>HTML5 introduces cutting-edge features for a more engaging web experience. The &lt;canvas> element opens the door to dynamic graphics, while &lt;details> and &lt;summary> provide a structured way to handle additional content. The &lt;progress> element gives users insight into ongoing tasks.</p>
@@ -123,13 +131,14 @@
     &lt;p>Hidden content revealed.&lt;/p>
 &lt;/details>
 
-&lt;progress value="50" max="100">50%&lt;/progress>
+&lt;progress value="50" max="100">50%&lt;/progress><span></span>
 </code></pre>
         <h3 id="Accessibility_Best_Practices" class="sub-topic-heading">Accessibility Best Practices</h3>
         <p>Create inclusive web experiences by implementing accessibility best practices. Leverage ARIA roles and attributes to ensure your web pages are accessible to users with diverse needs. Provide alternative text for images and ensure interactive elements are navigable.</p>
         <pre><code>&lt;button aria-label="Close" onclick="closeDialog()">X&lt;/button>
-&lt;img src="profile.jpg" alt="Profile Picture" role="img" aria-label="John Doe's Profile Picture">
+&lt;img src="profile.jpg" alt="Profile Picture" role="img" aria-label="John Doe's Profile Picture"><span></span>
 </code></pre>
+</section>
 
       <section class="main-section" id="Reference">
         <header><h1>Reference</h1></header>
