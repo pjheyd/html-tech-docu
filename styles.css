@@ -126,6 +126,8 @@ body {
   z-index: 3;
   cursor: pointer;
   opacity: 0;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .hamburger,
@@ -136,12 +138,6 @@ body {
 .header input:checked {
   position: fixed;
 }
-
-/* input[type="checkbox"]:focus-visible,
-input[type="checkbox"]:focus-within,
-input[type="checkbox"]:focus {
-  outline: none;
-} */
 
 .header input:checked ~ .hamburger {
   background: transparent;
@@ -181,6 +177,7 @@ input[type="checkbox"]:focus {
     border-radius: 0;
     box-shadow:  none;
     transition: 0.3s;
+    overflow-y: hidden;
   }
 
   .only-in-mobile-heading {
