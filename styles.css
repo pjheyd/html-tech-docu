@@ -137,11 +137,11 @@ body {
   position: fixed;
 }
 
-input[type="checkbox"]:focus-visible,
+/* input[type="checkbox"]:focus-visible,
 input[type="checkbox"]:focus-within,
 input[type="checkbox"]:focus {
   outline: none;
-}
+} */
 
 .header input:checked ~ .hamburger {
   background: transparent;
