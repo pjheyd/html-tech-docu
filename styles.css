@@ -126,7 +126,6 @@ body {
   z-index: 3;
   cursor: pointer;
   opacity: 0;
-  -webkit-tap-highlight-color: transparent;
 }
 
 .hamburger,
@@ -136,6 +135,12 @@ body {
 
 .header input:checked {
   position: fixed;
+}
+
+input[type="checkbox"]:focus-visible,
+input[type="checkbox"]:focus-within,
+input[type="checkbox"]:focus {
+  outline: none;
 }
 
 .header input:checked ~ .hamburger {
